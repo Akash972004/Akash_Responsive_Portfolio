@@ -311,6 +311,14 @@ img {
   row-gap: 2rem;
   
 }
+.note1
+{
+ text-align: center;
+}
+.note2
+{
+ text-align: center;
+}
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
@@ -342,7 +350,7 @@ img {
 } */
 
 /* ===== CONTACT =====*/
-/* .contact__input {
+.contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
@@ -359,7 +367,7 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
-} */
+}
 
 /* ===== FOOTER =====*/
 .footer {
@@ -503,47 +511,83 @@ img {
     width: 450px;
   }
  }
- /*
-.contact__form {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  width: 100%;
-  background-color: var(--first-color);
-  color: #fff;
+ /* Theme Toggle Button Style */
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: white;
   border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  padding: 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 1rem;
-  font-weight: var(--font-semi);
-  transition: 0.3s;
+  font-size: 1rem;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-.contact__button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+.theme-toggle:hover {
+  background-color: #444;
+}
+/* Toggle button style */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: inherit;
 }
 
-.contact__status {
-  margin-top: 1rem;
-  font-size: var(--normal-font-size);
-  text-align: center;
-  font-weight: var(--font-semi);
-} */
+/* DARK MODE STYLES */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Update nav and header colors in dark mode */
+body.dark-mode header,
+body.dark-mode .nav,
+body.dark-mode .nav__menu {
+  background-color: #1f1f1f;
+}
+
+/* Links and text */
+body.dark-mode a,
+body.dark-mode .nav__link {
+  color: #f0f0f0;
+}
+
+/* Buttons and inputs */
+body.dark-mode .button,
+body.dark-mode input,
+body.dark-mode textarea
+body.dark-mode .nav__toggle {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+/* Resume download button */
+body.dark-mode .button:hover {
+  background-color: #3a3a3a;
+}
+
+/* Work image overlay text (hover text) */
+body.dark-mode .hover-text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: smooth transition */
+body,
+.nav__menu,
+.button,
+input,
+textarea {
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Container for hamburger and theme toggle */
+.nav__toggle-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
