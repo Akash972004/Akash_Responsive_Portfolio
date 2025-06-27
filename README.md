@@ -26,6 +26,7 @@ This website represents my personal portfolio as a web developer and data analys
 - 📜 **Certifications Gallery**: Snapshot of relevant certifications
 - 📫 **Contact Form**: Allows users to reach out directly via email
 - 🔗 **Social Links**: Quick access to LinkedIn, GitHub, and other platforms
+- 🌓**Dark and light modes**: Switching dark and light themes
 
 ---
 
