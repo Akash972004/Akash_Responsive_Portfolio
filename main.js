@@ -62,12 +62,12 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
 document.querySelector(".button").addEventListener("click", function() {
     // Path to your PDF file
-    const pdfPath = "Akash_Soft_dev_Resume.pdf"; // Replace with the actual file path or hosted URL
+    const pdfPath = "Akash_Full_Stack_Resume.pdf"; // Replace with the actual file path or hosted URL
 
     // Create an anchor element
     const link = document.createElement("a");
     link.href = pdfPath; // Set the href attribute to the PDF file path
-    link.download = "Akash_Soft_dev_Resume.pdf"; // Desired file name for download
+    link.download = "Akash_Full_Stack_Resume.pdf"; // Desired file name for download
     link.click(); // Trigger the download
 
     console.log("PDF resume download triggered!");
