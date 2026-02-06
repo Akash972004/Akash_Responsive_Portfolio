@@ -147,13 +147,14 @@ img {
   gap: 1rem;
 }
 
-.nav__contact-btn {
+/* Increased specificity to override generic .button class */
+.nav .nav__contact-btn {
   padding: 0.75rem 1.8rem;
   font-size: var(--normal-font-size);
   font-weight: 600;
   border-radius: 50px;
+  /* Pill shape */
   display: inline-block;
-  /* Alwyas visible */
   background: linear-gradient(90deg, var(--first-color) 0%, #4a90e2 100%);
   color: #fff;
   box-shadow: 0 4px 15px rgba(71, 98, 255, 0.3);
@@ -161,14 +162,31 @@ img {
   white-space: nowrap;
 }
 
+/* Responsive visibility for Contact Button */
+.contact-desktop {
+  display: inline-block;
+}
+
+.contact-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
-  .nav__contact-btn {
+  .nav .nav__contact-btn {
     padding: 0.5rem 1rem;
-    /* Smaller padding on mobile */
     font-size: 0.75rem;
-    /* Smaller font on mobile */
     box-shadow: none;
-    /* Simplify on mobile */
+  }
+
+  /* Hide desktop button on mobile - Important to override display: inline-block */
+  .contact-desktop {
+    display: none !important;
+  }
+
+  /* Show mobile button on mobile */
+  .contact-mobile {
+    display: block;
+    margin-top: 1rem;
   }
 }
 
@@ -182,6 +200,9 @@ img {
   color: var(--second-color);
   cursor: pointer;
   transition: color 0.3s;
+  display: flex;
+  /* Ensure it behaves like a box for alignment */
+  align-items: center;
 }
 
 .change-theme:hover {
@@ -247,6 +268,10 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  /* alignment fix */
+  align-items: center;
+  justify-content: center;
 }
 
 /*Active menu*/
