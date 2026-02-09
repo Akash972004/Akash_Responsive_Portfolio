@@ -60,18 +60,7 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 4
 sr.reveal('.home__social-icon', { interval: 200 });
 sr.reveal('.skills__data, .work__img', { interval: 200 });
 
-document.querySelector(".button").addEventListener("click", function () {
-    // Path to your PDF file
-    const pdfPath = "1GA22IS007_AKASH.pdf"; // Replace with the actual file path or hosted URL
 
-    // Create an anchor element
-    const link = document.createElement("a");
-    link.href = pdfPath; // Set the href attribute to the PDF file path
-    link.download = "1GA22IS007_AKASH.pdf"; // Desired file name for download
-    link.click(); // Trigger the download
-
-    console.log("PDF resume download triggered!");
-});
 //contact form
 
 // Get all image containers
